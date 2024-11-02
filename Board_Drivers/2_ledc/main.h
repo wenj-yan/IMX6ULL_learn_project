@@ -6,7 +6,6 @@
 /*CCM相关寄存器*/
 
 #define CCM_CCGR0 *((volatile unsigned int *)0x020C4068)
-#define CCM_CCGR0 *((volatile unsigned int *)0X020C4068) 
 #define CCM_CCGR1 *((volatile unsigned int *)0X020C406C) 
 #define CCM_CCGR2 *((volatile unsigned int *)0X020C4070) 
 #define CCM_CCGR3 *((volatile unsigned int *)0X020C4074) 
