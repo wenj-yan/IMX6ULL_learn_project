@@ -5,5 +5,6 @@
 ```
 --Board_Drivers   裸机驱动开发
 --u-boot          移植好的uboot
+--linux           linux kernel
 ```
 
