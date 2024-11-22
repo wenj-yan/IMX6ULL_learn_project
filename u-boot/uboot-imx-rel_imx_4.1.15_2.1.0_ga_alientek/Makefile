@@ -2,30 +2,30 @@
 # SPDX-License-Identifier:	GPL-2.0+
 #
 
+# 定义U-Boot版本号
 VERSION = 2016
 PATCHLEVEL = 03
 SUBLEVEL =
 EXTRAVERSION =
 NAME =
 
-# *DOCUMENTATION*
-# To see a list of typical targets execute "make help"
-# More info can be located in ./README
-# Comments in this file are targeted only to the developer, do not
-# expect to learn how to build the kernel reading this file.
+# *文档*
+# 执行 "make help" 可以查看典型目标列表
+# 更多信息可以在 ./README 文件中找到
+# 此文件中的注释仅针对开发人员,不要期望通过阅读此文件来学习如何构建内核
 
-# o Do not use make's built-in rules and variables
-#   (this increases performance and avoids hard-to-debug behaviour);
-# o Look for make include files relative to root of kernel src
+# o 不使用make的内置规则和变量
+#   (这样可以提高性能并避免难以调试的行为)
+# o 从内核源码根目录查找make包含文件
 MAKEFLAGS += -rR --include-dir=$(CURDIR)
 
-# Avoid funny character set dependencies
+# 避免字符集依赖问题
 unexport LC_ALL
 LC_COLLATE=C
 LC_NUMERIC=C
 export LC_COLLATE LC_NUMERIC
 
-# Avoid interference with shell env settings
+# 避免shell环境设置的干扰
 unexport GREP_OPTIONS
 
 # We are using a recursive build, so we need to do a little thinking
